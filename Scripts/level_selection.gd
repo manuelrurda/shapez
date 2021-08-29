@@ -36,7 +36,6 @@ func generate_level(level_btn):
 
 func generate_hints(level_btn, level):
 	var num_of_hints = len(globals.levels[level_btn.level_num - 1]["hints"])
-	#print(num_of_hints)
 	var num_of_rows = ceil(num_of_hints/3.0)
 	var hints_remaining = num_of_hints
 	var hint_size = 776
@@ -49,7 +48,8 @@ func generate_hints(level_btn, level):
 			hint.init(globals.levels[level_btn.level_num - 1]["hints"][num_of_hints-hints_remaining])
 			hint.scale = Vector2(scale_size, scale_size)
 			hint.global_position = Vector2(globals.window_width * (j+1)/(num_of_cols + 1) - new_size/2, 
-										  globals.window_height * (i+1)/(num_of_rows + 4 + (1 * num_of_rows)) - new_size/2 + OS.get_screen_size().y * .1)
+				globals.window_height * (i+1)/(num_of_rows + 4 + (1 * num_of_rows)) - new_size/2 + OS.get_screen_size().y * .1)
+			
 			# Offset
 			hint.global_position += Vector2(-globals.window_width/2, -(globals.window_height/2 + new_size))
 			level.add_child(hint)
