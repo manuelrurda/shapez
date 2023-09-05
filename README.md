@@ -147,8 +147,11 @@ for i in range(num_of_rows):
         level.add_child(hint)
         hints_remaining -= 1
 ```
+![Screen Shot 2023-09-05 at 12 08 39](https://github.com/manuelrurda/shapez/assets/62727899/affff2ac-4c15-4c33-909d-e95ae6e49e64)
 
 #
+
+
 
 Manuel Rodriguez Urdapilleta
 <p>28/08/2021</p>
